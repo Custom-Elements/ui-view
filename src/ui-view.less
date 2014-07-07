@@ -1,0 +1,19 @@
+@import "../node_modules/ui-styles/variables";
+@import "../node_modules/ui-styles/visual-elements";
+
+:host {
+  display: block;
+  .full;
+  padding: 1em;
+  .transition(@transition);
+  .transform-origin(0 0);
+  .transform(rotate3d(0,0,0,0) translate3d(110%,0,0));
+}
+
+:host([current]) {
+  .transform(rotate3d(0,0,0,0) translate3d(0,0,0));
+}
+
+:host([history]) {
+  .transform(rotate3d(0,1,0,90deg) translate3d(-50%,0,0));
+}
