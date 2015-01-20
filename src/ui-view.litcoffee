@@ -27,6 +27,7 @@ Displayed in the navigation toolbar area. You can leave this blank.
       ready: ->
 
       attached: ->
+        @setAttribute 'hidden', ''
 
       domReady: ->
 
